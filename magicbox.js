@@ -60,14 +60,14 @@ function check()
   while(true)
     {
     let A=randomArray()
-    let row1=Number(A[0][0])+Number(A[0][1])+Number(A[0][2])
-    let row2=Number(A[1][0])+Number(A[1][1])+Number(A[1][2])
-    let row3=Number(A[2][0])+Number(A[2][1])+Number(A[2][2])
-    let col1=Number(A[0][0])+Number(A[1][0])+Number(A[2][0]) 
-    let col2=Number(A[0][1])+Number(A[1][1])+Number(A[2][1]) 
-    let col3=Number(A[0][2])+Number(A[1][2])+Number(A[2][2]) 
-    let dia1=Number(A[0][0])+Number(A[1][1])+Number(A[2][2])
-    let dia2=Number(A[0][2])+Number(A[1][1])+Number(A[2][0])
+    let row1=A[0][0] + A[0][1] + A[0][2]
+    let row2=A[1][0] + A[1][1] + A[1][2]
+    let row3=A[2][0] + A[2][1] + A[2][2]
+    let col1=A[0][0] + A[1][0] + A[2][0]
+    let col2=A[0][1] + A[1][1] + A[2][1]
+    let col3=A[0][2] + A[1][2] + A[2][2] 
+    let dia1=A[0][0] + A[1][1] + A[2][2]
+    let dia2=A[0][2] + A[1][1] + A[2][0]
     if(col1==col2 && col2==col3 && row1==row2 && row2==row3 && dia1==dia2)
         {
           return A
