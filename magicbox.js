@@ -68,7 +68,7 @@ function check()
     let col3=A[0][2] + A[1][2] + A[2][2] 
     let dia1=A[0][0] + A[1][1] + A[2][2]
     let dia2=A[0][2] + A[1][1] + A[2][0]
-    if(col1==col2 && col2==col3 && row1==row2 && row2==row3 && dia1==dia2)
+    if(col1 === col2 && col2 === col3 && row1 === row2 && row2 === row3 && dia1 === dia2)
         {
           return A
           break
